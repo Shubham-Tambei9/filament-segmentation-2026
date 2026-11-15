@@ -1,0 +1,26 @@
+{
+ "name": "fast: EfficientNetV2-S + ConvNeXt-T U-Nets (1024 px, 5 folds each), rules + refiner",
+ "tta": "d4",
+ "groups": [
+  {
+   "name": "effv2",
+   "weight": 1.0,
+   "members": [
+    "tu-tf_efficientnetv2_s_s1024"
+   ]
+  },
+  {
+   "name": "convnext",
+   "weight": 1.0,
+   "members": [
+    "tu-convnext_tiny_s1024"
+   ]
+  }
+ ],
+ "params": "postprocess_fast.json",
+ "refiner": "refiner_fast.pt",
+ "oof_pq": {
+  "rules": 0.4335,
+  "refined": 0.4417
+ }
+}

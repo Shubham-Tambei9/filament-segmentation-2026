@@ -1,0 +1,40 @@
+{
+ "name": "H: FR + cnx1536 + cnxs",
+ "tta": "d4",
+ "groups": [
+  {
+   "name": "effv2",
+   "weight": 1.0,
+   "members": [
+    "tu-tf_efficientnetv2_s_s1024"
+   ]
+  },
+  {
+   "name": "convnext",
+   "weight": 1.0,
+   "members": [
+    "tu-convnext_tiny_s1024"
+   ]
+  },
+  {
+   "name": "cnx1536",
+   "weight": 4.0,
+   "members": [
+    "tu-convnext_tiny_s1536"
+   ]
+  },
+  {
+   "name": "cnxs",
+   "weight": 0.5,
+   "members": [
+    "tu-convnext_small_s1024"
+   ]
+  }
+ ],
+ "params": "postprocess_blendH_FR.json",
+ "refiner": "refiner_blendH_FR.pt",
+ "oof_pq": {
+  "rules": 0.4392440886190435,
+  "refined": 0.4434
+ }
+}

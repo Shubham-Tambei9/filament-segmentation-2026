@@ -1,0 +1,14 @@
+{
+ "rThreeFourAlonePQ": 0.4287,
+ "uppAlonePQ": 0.4238,
+ "blendGain": "+0.001",
+ "refRulesPQ": 0.439,
+ "refPQ": 0.4434,
+ "refSQ": 0.679,
+ "refRQ": 0.653,
+ "refFolds": 5,
+ "gRulesPQ": 0.4344,
+ "gRefPQ": 0.4382,
+ "effvTwoAlonePQ": 0.4275,
+ "cnxAlonePQ": 0.4274
+}

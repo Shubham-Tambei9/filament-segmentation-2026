@@ -1,0 +1,47 @@
+{
+ "name": "G: F + effv2 + convnext",
+ "tta": "d4",
+ "groups": [
+  {
+   "name": "resnet34",
+   "weight": 0.5,
+   "members": [
+    "resnet34_s1024",
+    "resnet34_s1536"
+   ]
+  },
+  {
+   "name": "unetpp1536",
+   "weight": 0.25,
+   "members": [
+    "unetplusplus_resnet34_s1536"
+   ]
+  },
+  {
+   "name": "unetpp1024",
+   "weight": 0.25,
+   "members": [
+    "unetplusplus_resnet34_s1024"
+   ]
+  },
+  {
+   "name": "effv2",
+   "weight": 0.25,
+   "members": [
+    "tu-tf_efficientnetv2_s_s1024"
+   ]
+  },
+  {
+   "name": "convnext",
+   "weight": 0.5,
+   "members": [
+    "tu-convnext_tiny_s1024"
+   ]
+  }
+ ],
+ "params": "postprocess_blendG.json",
+ "refiner": "refiner_blendG.pt",
+ "oof_pq": {
+  "refined": 0.4382
+ }
+}

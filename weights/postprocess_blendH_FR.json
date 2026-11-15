@@ -1,0 +1,7 @@
+{
+  "threshold": 0.5,
+  "merge_gap": 16,
+  "min_area": 300,
+  "min_mean_prob": 0.85,
+  "min_instances": 1
+}

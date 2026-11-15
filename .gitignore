@@ -1,0 +1,36 @@
+# competition data (non-commercial licence; never commit)
+filament-segmentation-2026/
+*.jpeg
+*.jpg
+
+# local environment, caches, experiment outputs
+.venv/
+work/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+submission*.csv
+
+# LaTeX build artefacts (the report is compiled on Overleaf)
+report/*.aux
+report/*.log
+report/*.out
+report/*.synctex.gz
+
+# personal notes
+competition info.txt
+overview.txt
+work/kaggle_api/
+
+# Word draft of the report (contains contact details)
+Report_draft*.docx
+Report_info_sheet.docx
+EDI*.docx
+report_overleaf.zip
+
+# trained weights are published as GitHub Release assets (too large for git)
+weights/*.pt
+weights/*.results.jsonl
+notebooks/filament_pipeline_executed.ipynb
+report_overleaf/
+brag-output/

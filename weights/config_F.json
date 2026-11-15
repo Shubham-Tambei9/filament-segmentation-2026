@@ -1,0 +1,13 @@
+{
+ "name": "F: ResNet-34 (1024+1536) + UNet++ (1024, 1536), rules + refiner",
+ "tta": "d4",
+ "groups": [
+  {"name": "resnet34", "weight": 0.5, "members": ["resnet34_s1024", "resnet34_s1536"]},
+  {"name": "unetpp1536", "weight": 0.25, "members": ["unetplusplus_resnet34_s1536"]},
+  {"name": "unetpp1024", "weight": 0.25, "members": ["unetplusplus_resnet34_s1024"]}
+ ],
+ "params": "postprocess_blendF.json",
+ "refiner": "refiner_blendF.pt",
+ "oof_pq": {"rules": 0.4304, "refined": 0.4352},
+ "public_lb": 0.38
+}

@@ -1,0 +1,29 @@
+{
+ "n_images": 707,
+ "model": {
+  "PQ": 0.4390355438024867,
+  "mean_IoU_overlapping": 0.5790207141043368,
+  "mean_Dice_overlapping": 0.71124966757367,
+  "gt_hits": 6511,
+  "gt_misses": 1688,
+  "pred_hits": 6611,
+  "pred_misses": 813,
+  "gt_1to1": 6192,
+  "gt_1to2plus": 319,
+  "pred_1to1": 6360,
+  "pred_2plus_to1": 251
+ },
+ "annotator_vs_annotator": {
+  "PQ": 0.33965307168081826,
+  "mean_IoU_overlapping": 0.5170742963944136,
+  "mean_Dice_overlapping": 0.6601910225438395,
+  "gt_hits": 3297,
+  "gt_misses": 707,
+  "pred_hits": 3282,
+  "pred_misses": 713,
+  "gt_1to1": 3180,
+  "gt_1to2plus": 117,
+  "pred_1to1": 3146,
+  "pred_2plus_to1": 136
+ }
+}

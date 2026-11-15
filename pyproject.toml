@@ -1,0 +1,6 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+    # pycocotools' compiled decoder predates NumPy 2's __array__(copy=...) protocol; output is unaffected
+    "ignore:__array__ implementation doesn't accept a copy keyword:DeprecationWarning",
+]
