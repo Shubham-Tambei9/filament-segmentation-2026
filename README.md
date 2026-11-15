@@ -6,8 +6,8 @@ Panoptic Quality (PQ). Ground truth comes from the MAGFiLO dataset (several anno
 **Result:** out-of-fold PQ **0.443** on the 707 training images, scored against every annotator (two human
 annotators agree with each other at 0.340); public leaderboard **0.39**. A plain-language explanation of every
 component is in [docs/pipeline_walkthrough.md](docs/pipeline_walkthrough.md); the reasoning and evidence behind
-each choice is in [docs/design_decisions.md](docs/design_decisions.md); the 4-page report source is in
-[report/](report/).
+each choice is in [docs/design_decisions.md](docs/design_decisions.md); the 4-page report is
+[report/Report_Shubham_Tambe.pdf](report/Report_Shubham_Tambe.pdf) (LaTeX source in [report/](report/)).
 
 ## Approach
 
