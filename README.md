@@ -10,7 +10,7 @@ interval 0.434-0.452; per fold 0.443 ± 0.011; two human annotators agree with e
 leaderboard **0.39**. A plain-language explanation of every
 component is in [docs/pipeline_walkthrough.md](docs/pipeline_walkthrough.md); the reasoning and evidence behind
 each choice is in [docs/design_decisions.md](docs/design_decisions.md); the 4-page report is
-[report/Report_Shubham_Tambe.pdf](report/Report_Shubham_Tambe.pdf), written in the organisers' Overleaf template
+[report/Technical_Report_Shubham_Tambe_shubhami9.pdf](report/Technical_Report_Shubham_Tambe_shubhami9.pdf), written in the organisers' Overleaf template
 (LaTeX source in [report/](report/); `python report/build_overleaf_zip.py` packs it for Overleaf).
 
 https://github.com/user-attachments/assets/a2a12683-7489-4111-8845-55f9acb9af9c
