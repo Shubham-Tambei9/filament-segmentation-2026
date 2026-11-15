@@ -1,5 +1,7 @@
 # Solar Filament Instance Segmentation (Kaggle filament-segmentation-2026)
 
+Solution to the [Solar Filament Segmentation Challenge 2026](https://www.kaggle.com/competitions/filament-segmentation-2026)
+(Kaggle, organised with the U.S. NSF National Solar Observatory; Kaggle: shubhami9).
 Instance segmentation of solar filaments in full-disk GONG H-alpha images (2048 x 2048), scored by
 Panoptic Quality (PQ). Ground truth comes from the MAGFiLO dataset (several annotators per image).
 
