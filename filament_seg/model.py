@@ -9,6 +9,7 @@ import segmentation_models_pytorch as smp
 import torch
 
 from .paths import configure_caches
+from .weights_store import ensure_weight
 
 
 ARCHS = {"unet": smp.Unet, "unetplusplus": smp.UnetPlusPlus}
@@ -31,7 +32,7 @@ def save_checkpoint(path, model: torch.nn.Module, meta: dict) -> None:
 
 
 def load_checkpoint(path, device: str | torch.device = "cpu") -> tuple[torch.nn.Module, dict]:
-    ckpt = torch.load(path, map_location="cpu", weights_only=False)
+    ckpt = torch.load(ensure_weight(path), map_location="cpu", weights_only=False)
     meta = ckpt["meta"]
     model = build_model(meta["encoder"], pretrained=False, arch=meta.get("arch", "unet"))
     model.load_state_dict({k: v.float() if v.is_floating_point() else v for k, v in ckpt["state_dict"].items()})

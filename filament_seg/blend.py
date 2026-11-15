@@ -13,6 +13,8 @@ from pathlib import Path
 import cv2
 import numpy as np
 
+from .weights_store import ensure_weight
+
 
 def blend_dirs(out_dir, specs: list[tuple[float, list]]) -> int:
     """Blend ``<stem>.npy`` maps: ``specs`` = [(weight, [dir, ...]), ...] (the dirs of one group are pooled).
@@ -46,10 +48,16 @@ def load_config(path) -> dict:
     for key in ("params", "refiner"):
         if cfg.get(key):
             cfg[key] = str(path.parent / cfg[key])
+    if cfg.get("refiner"):
+        ensure_weight(cfg["refiner"])
     return cfg
 
 
 def member_weights(cfg: dict, member: str, folds) -> list[Path]:
-    """Checkpoint paths of one group member for the given folds (only those that exist)."""
+    """Checkpoint paths of one group member for the given folds (only those that exist).
+
+    Files stored in parts are joined first (and missing ones fetched from the release), so a fresh clone
+    of the repository gives the same models as the machine that trained them.
+    """
     base = Path(cfg.get("weights_dir", "weights"))
-    return [p for p in (base / f"{member}_f{f}.pt" for f in folds) if p.exists()]
+    return [p for p in (ensure_weight(base / f"{member}_f{f}.pt") for f in folds) if p.exists()]

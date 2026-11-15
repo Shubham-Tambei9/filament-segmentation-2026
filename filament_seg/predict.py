@@ -65,8 +65,9 @@ def main(argv=None):
     refiner = None
     if args.refiner:
         from .refine_train import build_refiner, refine_labels
+        from .weights_store import ensure_weight
 
-        ckpt = torch.load(args.refiner, map_location="cpu", weights_only=False)
+        ckpt = torch.load(ensure_weight(args.refiner), map_location="cpu", weights_only=False)
         refiner = build_refiner(pretrained=False)
         refiner.load_state_dict({k: v.float() for k, v in ckpt["state_dict"].items()})
         refiner = refiner.to(device).eval()
