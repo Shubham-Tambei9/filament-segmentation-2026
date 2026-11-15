@@ -9,13 +9,9 @@ component is in [docs/pipeline_walkthrough.md](docs/pipeline_walkthrough.md); th
 each choice is in [docs/design_decisions.md](docs/design_decisions.md); the 4-page report is
 [report/Report_Shubham_Tambe.pdf](report/Report_Shubham_Tambe.pdf) (LaTeX source in [report/](report/)).
 
-
-
 https://github.com/user-attachments/assets/a2a12683-7489-4111-8845-55f9acb9af9c
 
-
-
-*72-second video overview (click the image; MP4 on the v1.0 release). Music: Sascha Ende, ende.app (CC BY 4.0).*
+*72-second video overview (full-quality MP4 on the [v1.0 release](https://github.com/Shubham-Tambei9/filament-segmentation-2026/releases/download/v1.0/filament-segmentation-product.mp4)). Music: Sascha Ende, ende.app (CC BY 4.0).*
 
 ## Approach
 
