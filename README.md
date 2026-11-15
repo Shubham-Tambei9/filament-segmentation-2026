@@ -64,6 +64,13 @@ mean Dice 0.711 (0.660); 3.9% of reference filaments split (annotators: 2.9%), 3
 Python 3.12, NVIDIA GPU (developed on an RTX 3070 Ti Laptop, 8 GB). The pinned versions are in
 [`requirements.txt`](requirements.txt).
 
+Training was shared between the laptop GPU and free Kaggle notebook GPUs (Tesla T4): EfficientNetV2-S
+folds 0-4 and ConvNeXt-T 1536 / ConvNeXt-S folds 0-3 on Kaggle; ConvNeXt-T 1024 folds 0-4, ConvNeXt-T 1536 /
+ConvNeXt-S fold 4 and the refiners on the laptop (one early UNet++ fold, not in the final pipeline, on Google
+Colab). T4 / P100 GPUs only emulate bf16, so the Kaggle runs trained with `--amp fp16` (the default, bf16, is for
+GPUs of compute capability 8.0 or newer); inference and refiner training choose the precision automatically
+(`filament_seg.inference.amp_dtype`). All inference timings are measured on the laptop GPU.
+
 ```bash
 python -m venv .venv
 .venv/Scripts/activate            # Linux/macOS: source .venv/bin/activate
