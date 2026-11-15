@@ -5,11 +5,13 @@ Solution to the [Solar Filament Segmentation Challenge 2026](https://www.kaggle.
 Instance segmentation of solar filaments in full-disk GONG H-alpha images (2048 x 2048), scored by
 Panoptic Quality (PQ). Ground truth comes from the MAGFiLO dataset (several annotators per image).
 
-**Result:** out-of-fold PQ **0.443** on the 707 training images, scored against every annotator (two human
-annotators agree with each other at 0.340); public leaderboard **0.39**. A plain-language explanation of every
+**Result:** out-of-fold PQ **0.443** on the 707 training images, scored against every annotator (95% bootstrap
+interval 0.434-0.452; per fold 0.443 ± 0.011; two human annotators agree with each other at 0.340); public
+leaderboard **0.39**. A plain-language explanation of every
 component is in [docs/pipeline_walkthrough.md](docs/pipeline_walkthrough.md); the reasoning and evidence behind
 each choice is in [docs/design_decisions.md](docs/design_decisions.md); the 4-page report is
-[report/Report_Shubham_Tambe.pdf](report/Report_Shubham_Tambe.pdf) (LaTeX source in [report/](report/)).
+[report/Report_Shubham_Tambe.pdf](report/Report_Shubham_Tambe.pdf), written in the organisers' Overleaf template
+(LaTeX source in [report/](report/); `python report/build_overleaf_zip.py` packs it for Overleaf).
 
 https://github.com/user-attachments/assets/a2a12683-7489-4111-8845-55f9acb9af9c
 
