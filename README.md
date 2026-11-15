@@ -127,5 +127,7 @@ python -m pytest
 
 ## License
 
-MIT (code). Model weights derive from ImageNet-pretrained encoders under Apache-2.0 / BSD licences.
-The competition data is not included and is subject to its own licence.
+MIT (code). Model weights derive from ImageNet-pretrained encoders under Apache-2.0 / BSD licences and were
+trained on the competition data, which may be used for non-commercial purposes only (competition, academic
+research and education); the released weights are therefore provided for non-commercial, academic use.
+The competition data itself is not included.
