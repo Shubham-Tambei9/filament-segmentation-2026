@@ -90,8 +90,8 @@ MAGFiLO_1.0_Kaggle_2026/
 The trained weights of the submitted pipelines (20 U-Nets and 2 refiners, 1.4 GB) are stored in `weights/`, so
 nothing has to be downloaded or retrained. The five ConvNeXt-S checkpoints are larger than GitHub's 100 MB file
 limit and are stored as two parts each (`*.pt.part0`, `*.pt.part1`); they are joined automatically the first
-time they are loaded ([`weights_store.py`](filament_seg/weights_store.py)). All checkpoints, including the
-earlier ResNet-34 / UNet++ models, are also on the [v1.0 release](https://github.com/Shubham-Tambei9/filament-segmentation-2026/releases/tag/v1.0).
+time they are loaded ([`weights_store.py`](filament_seg/weights_store.py)). The same 22 files are also on the
+[v1.0 release](https://github.com/Shubham-Tambei9/filament-segmentation-2026/releases/tag/v1.0).
 
 ## Usage
 

@@ -30,7 +30,7 @@ report_overleaf.zip
 
 # trained weights: only those of the submitted pipelines are stored in the repo ("full" = final_config.json,
 # "fast" = fast_config.json); files over GitHub's 100 MB limit are stored as <name>.pt.part0, .part1 and joined
-# on first use (filament_seg/weights_store.py). All checkpoints are also on the v1.0 GitHub release.
+# on first use (filament_seg/weights_store.py). The same 22 checkpoints are also on the v1.0 GitHub release.
 weights/*.pt
 !weights/tu-tf_efficientnetv2_s_s1024_f?.pt
 !weights/tu-convnext_tiny_s1024_f?.pt
